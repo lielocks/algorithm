@@ -1,5 +1,4 @@
 import java.io.*;
-import java.util.*;
 
 public class Main {
 
@@ -7,18 +6,17 @@ public class Main {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        StringTokenizer st;
-        List<Integer> list = new ArrayList<>();
+        int max = 0;
+        int index = 0;
 
-        for (int i = 0; i < 9; i ++) {
-            st = new StringTokenizer(br.readLine());
-            int a = Integer.parseInt(st.nextToken());
-            list.add(a);
+        for (int i = 0; i < 9; i++) {
+            int val = Integer.parseInt(br.readLine());
+            if (val > max) {
+                max = val;
+                index = i + 1;
+            }
         }
 
-        br.close();
-        Integer max = Collections.max(list);
-
-        System.out.println(max + "\n" + (list.indexOf(max) + 1));
+        System.out.println(max + "\n" + index);
     }
 }
