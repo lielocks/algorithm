@@ -17,7 +17,7 @@ class Solution {
         for(int i = 0; i < 9; i++) { //1 ~ 8까지 개수를 가지고 있는 통
             for(int j = 1; j < i; j++) {
                 for(Integer a : setArr[j]) {
-                    for(Integer b : setArr[i-j]) {
+                    for(Integer b : setArr[i-j]) { // ex. a, b -> (0, 0) (0, 1) (0, 2) / (1,0) (1,1) (1, 2) / (2,0) (2,1) (2,2)
                         setArr[i].add(a * b);
                         setArr[i].add(a - b);
                         setArr[i].add(b - a);
