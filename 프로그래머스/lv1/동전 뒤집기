@@ -25,3 +25,43 @@ coin	k	result
 입출력 예 #3
 
 책상을 한 번 쳐서 세 번째, 네 번째 동전을 뒤집으면 모든 동전이 뒷면을 향하게 됩니다.
+
+
+import java.util.Arrays;
+
+class Solution {
+    public int solution(int[] coin, int k) {
+        int zero = flip(Arrays.copyOf(coin, coin.length), k, 0);   
+        int one = flip(Arrays.copyOf(coin, coin.length), k, 1);  
+        
+        int answer = Math.min(zero, one);
+        if (answer == Integer.MAX_VALUE) {
+            return -1;
+        }
+
+        return answer;
+
+    }
+
+    private int flip(int[] coin, int k, int num) {
+        
+        int ret = 0;
+        for (int i = 0; i <= coin.length - k; i++) { 
+            //무조건 k만큼 연속되게 뒤집기 가능하니까 i 범위는 coin.length - k
+            if (coin[i] != num) {  //다르면 뒤집기  
+                for (int j = 0; j < k; j++) {
+                    coin[i + j] = 1 - coin[i + j];
+                }
+                ret++;
+            }
+        }
+
+        for (int i = coin.length - k + 1; i < coin.length; i++) {
+            if (coin[i] != num) {
+                return Integer.MAX_VALUE; // 실패 case
+            }
+        }
+
+        return ret;
+    }
+}
