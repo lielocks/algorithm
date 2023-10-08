@@ -4,6 +4,7 @@ import java.util.Arrays;
 public class Main {
 
   public static void main(String[] args) {
+        // 공유기 사이의 거리를 정해놓고 늘리거나 or 줄이거나의 기준 !
       
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
