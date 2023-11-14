@@ -21,6 +21,7 @@ public class Main {
             int minV = Integer.MAX_VALUE;
 
             // (0,0) : 흰돌이라 할 때, (i,j) : i + j값이 홀수인 검은 돌 하나 생략 가능
+            // (1, 0) (3, 0) (5, 0) (7, 0) , (0, 1) (2, 1) (4, 1) (6, 1)
             for(int i = 0; i < y; i++) {
                 st = new StringTokenizer(br.readLine());
 
