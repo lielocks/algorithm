@@ -32,3 +32,5 @@
 
  <p>첫째 줄에 각 사람이 돈을 인출하는데 필요한 시간의 합의 최솟값을 출력한다.</p>
 
+![image](https://github.com/lielocks/algorithm/assets/107406265/d1ff46ae-2c39-4c3b-bc34-a490da043804)
+
