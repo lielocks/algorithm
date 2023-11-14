@@ -8,6 +8,7 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
 
+        // R행 C열 -> R 가로축 y, C 세로축 x
         int y = Integer.parseInt(st.nextToken());
         int x = Integer.parseInt(st.nextToken());
 
