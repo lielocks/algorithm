@@ -43,7 +43,7 @@ public class Main {
             }
 
             if(isPossible) {
-                int cnt = strChan.length() + Math.abs(i - n);  // 숫자 이동 후 +,- 이동
+                int cnt = strChan.length() + Math.abs(i - n);  // strChan.length() -> 자릿수만큼의 버튼 갯수 + 숫자 이동 후 +,- 이동
                 ans = Math.min(ans, cnt);
             }
         }
