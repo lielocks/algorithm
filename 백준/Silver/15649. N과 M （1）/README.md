@@ -2,6 +2,9 @@
 
 [문제 링크](https://www.acmicpc.net/problem/15649) 
 
+![image](https://github.com/lielocks/algorithm/assets/107406265/1d5b6db2-c4ea-4670-bf53-8db8dabfd1c9)
+
+
 ### 성능 요약
 
 메모리: 22828 KB, 시간: 272 ms
