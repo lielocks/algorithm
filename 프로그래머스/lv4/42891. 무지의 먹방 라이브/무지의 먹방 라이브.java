@@ -1,7 +1,5 @@
 import java.util.*;
 
-
-
 class Solution {
     class Food {
         int time;
