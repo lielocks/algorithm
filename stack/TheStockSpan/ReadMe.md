@@ -1,4 +1,5 @@
-The Stock Span Problem
+***The Stock Span Problem***
+
 The stock span problem is a financial problem where we have a series of N daily price quotes for a stock and we need to calculate the span of the stock’s price for all N days. The span Si of the stock’s price on a given day i is defined as the maximum number of consecutive days just before the given day, for which the price of the stock on the current day is less than or equal to its price on the given day. 
 
 **Examples:**
@@ -20,3 +21,6 @@ Explanation: Traversing the given input span for 10 will be 1, 4 is smaller than
 
  
 ![image](https://github.com/lielocks/algorithm/assets/107406265/27c8ec37-8eaf-41c6-94ad-674b53c00b16)
+
+
+_ref : https://www.geeksforgeeks.org/the-stock-span-problem/_
