@@ -24,3 +24,4 @@ Explanation: Traversing the given input span for 10 will be 1, 4 is smaller than
 
 
 _ref : https://www.geeksforgeeks.org/the-stock-span-problem/_
+
