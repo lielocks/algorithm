@@ -18,13 +18,13 @@
 
 <p>계단 오르기 게임은 계단 아래 시작점부터 계단 꼭대기에 위치한 도착점까지 가는 게임이다. <그림 1>과 같이 각각의 계단에는 일정한 점수가 쓰여 있는데 계단을 밟으면 그 계단에 쓰여 있는 점수를 얻게 된다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 300px; height: 160px;"></p>
+<p style="text-align: center;"><img alt="" src="https://github.com/user-attachments/assets/aa673c80-cff3-46d4-8e2b-cf8593b55c8e" style="width: 300px; height: 160px;"></p>
 
 <p style="text-align: center;"><그림 1></p>
 
 <p>예를 들어 <그림 2>와 같이 시작점에서부터 첫 번째, 두 번째, 네 번째, 여섯 번째 계단을 밟아 도착점에 도달하면 총 점수는 10 + 20 + 25 + 20 = 75점이 된다.</p>
 
-<p style="text-align: center;"><img alt="" src="" style="width: 300px; height: 190px;"></p>
+<p style="text-align: center;"><img alt="" src="https://github.com/user-attachments/assets/ec1ca6b5-d26a-49a3-9f18-34cc433987f0" style="width: 300px; height: 190px;"></p>
 
 <p style="text-align: center;"><그림 2></p>
 
@@ -50,3 +50,15 @@
 
  <p>첫째 줄에 계단 오르기 게임에서 얻을 수 있는 총 점수의 최댓값을 출력한다.</p>
 
+<br>
+
+> **핵심 점화식**
+>
+> dp[i] = max(dp[i−2] + score[i], dp[i−3] + score[i−1] + score[i])
+
+
+1. **두 계단 전에서 오는 경우** : **`dp[i-2]`** + score[i]
+
+2. **한 계단 전에서 오는 경우** : 이 경우 직전에 밟은 계단을 포함해야 하므로, 세 계단 연속 규칙을 피하기 위해 i-3 에서 한 계단을 건너뛰고 와야 한다.
+
+   즉, **`dp[i-3] + score[i-1]`** + score[i]
